@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Your Name">
-<meta name="dcterms.date" content="2025-01-01">
+<meta name="author" content="Bekah Jensen">
+<meta name="dcterms.date" content="2025-11-12">
 
 <title>Data Acquisition Project – Your Name - Data Science Portfolio</title>
 <style>
@@ -60,7 +60,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -69,14 +69,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-b3aed8deb8408878d0e4e165d993d59e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-f245066ca199b7326ac6b360085ddf3a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,6 +105,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -116,6 +120,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Your Name - Data Science Portfolio</span>
     </a>
@@ -127,7 +133,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -191,6 +197,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -222,15 +232,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#u.s.-colleges-and-graduation-rates" id="toc-u.s.-colleges-and-graduation-rates" class="nav-link active" data-scroll-target="#u.s.-colleges-and-graduation-rates">U.S. Colleges and Graduation Rates</a>
+  <ul class="collapse">
+  <li><a href="#an-analysis-of-1000-u.s.-colleges-graduation-rates." id="toc-an-analysis-of-1000-u.s.-colleges-graduation-rates." class="nav-link" data-scroll-target="#an-analysis-of-1000-u.s.-colleges-graduation-rates.">An analysis of 1,000 U.S. colleges graduation rates.</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a></li>
+  <li><a href="#ethical-data-practices" id="toc-ethical-data-practices" class="nav-link" data-scroll-target="#ethical-data-practices">Ethical Data Practices</a></li>
+  <li><a href="#a-short-note-on-acquiring-the-data" id="toc-a-short-note-on-acquiring-the-data" class="nav-link" data-scroll-target="#a-short-note-on-acquiring-the-data">A Short Note on Acquiring the Data</a></li>
+  <li><a href="#eda-highlights" id="toc-eda-highlights" class="nav-link" data-scroll-target="#eda-highlights">EDA Highlights</a>
+  <ul class="collapse">
+  <li><a href="#summary-statistics" id="toc-summary-statistics" class="nav-link" data-scroll-target="#summary-statistics">Summary Statistics</a></li>
+  <li><a href="#plots" id="toc-plots" class="nav-link" data-scroll-target="#plots">Plots</a></li>
+  </ul></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#code-links" id="toc-code-links" class="nav-link" data-scroll-target="#code-links">Code Links</a></li>
+  <li><a href="#disclaimers" id="toc-disclaimers" class="nav-link" data-scroll-target="#disclaimers">Disclaimers</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Data Acquisition Project</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Data Acquisition Project</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -240,14 +271,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Your Name </p>
+             <p>Bekah Jensen </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2025</p>
+      <p class="date">November 12, 2025</p>
     </div>
   </div>
   
@@ -259,11 +290,832 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This is coming down the pipeline. Check again later.</p>
+<div id="3d6996f2" class="cell" data-execution_count="1">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error, r2_score</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+</div>
+<section id="u.s.-colleges-and-graduation-rates" class="level1">
+<h1>U.S. Colleges and Graduation Rates</h1>
+<section id="an-analysis-of-1000-u.s.-colleges-graduation-rates." class="level3">
+<h3 class="anchored" data-anchor-id="an-analysis-of-1000-u.s.-colleges-graduation-rates.">An analysis of 1,000 U.S. colleges graduation rates.</h3>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The purpose of this blog is to show an in depth analysis of the affects on graduations rates of U.S. colleges. The analysis studies 1,000 colleges with information on student size, tuition prices, diversity, region, and graduation rates. Studying this information could be useful in determining what factors help students graduate. Those inquiring about a future college career could use the information when deciding where to attend school.</p>
+<p>Education is crucial for societal purposes. Education allows people to become evolved thinkers, be active participants in society, and the economy. Learning what factors help students graduate could help increase overall graduation rates. While this analysis does give some insight on what influences graduation rates, this information should not be used and cited as this is not an official analysis.</p>
+</section>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<p>From this analysis it is my hope that I learn more about the data cleaning process and analysis. I am hoping to gain a better understanding of demographics from different colleges across the nation.</p>
+<p>With these goals I also hope to provide insight on the dataset created.</p>
+</section>
+<section id="ethical-data-practices" class="level2">
+<h2 class="anchored" data-anchor-id="ethical-data-practices">Ethical Data Practices</h2>
+<p>The data is acquired from the U.S. Census Bureau and the College Scorecard by the U.S. Department of Education.</p>
+<p>Data gathered from the U.S. Census Bureau and College Scorecard is allowed because it is public data. Anyone can access the data as long as it is not used to identify any individual person, household, business or other entity. The Bureau also requests that the following disclaimer be made: “This product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau.”</p>
+<p>Using these guidelines I was able to determine that use of this data for the purpose of my research question was ethical. I acquired API keys specifically assigned to myself and these keys were not published and cannot be accessed via the cleaning process and exploratory data analysis.</p>
+</section>
+<section id="a-short-note-on-acquiring-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="a-short-note-on-acquiring-the-data">A Short Note on Acquiring the Data</h2>
+<p>This analysis uses one datasets that has been cleaned and merged from two datasets, one with information about colleges, the other about state populations.</p>
+<p>The <a href="https://www.census.gov/data/developers/data-sets.html">U.S. Census Bureau</a> and <a href="https://collegescorecard.ed.gov/data/api-documentation">College Scorecard</a> have in depth information about downloading data, acquiring, and use of APIs and keys. To get started follow the instructions on those sites. Once you have the two different datasets, clean them and merge to get one dataframe that includes the following columns:</p>
+<ul>
+<li>Student_Size</li>
+<li>Tuition_In_State</li>
+<li>Tuition_Out_State</li>
+<li>Female_Share</li>
+<li>Race_White</li>
+<li>Race_Black</li>
+<li>Race_Hispanic</li>
+<li>Race_Asian</li>
+<li>Race_AIAN</li>
+<li>Race_NHPI</li>
+<li>Race_Two_Or_More</li>
+<li>Grad_Rate</li>
+<li>School_Name</li>
+<li>City,State</li>
+<li>id</li>
+<li>July_Estimate_2024</li>
+<li>Region</li>
+</ul>
+</section>
+<section id="eda-highlights" class="level2">
+<h2 class="anchored" data-anchor-id="eda-highlights">EDA Highlights</h2>
+<section id="summary-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="summary-statistics">Summary Statistics</h3>
+<div id="7b5b4590" class="cell" data-execution_count="2">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">'data/college_state_pop.csv'</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>data.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Student_Size</th>
+<th data-quarto-table-cell-role="th">Tuition_In_State</th>
+<th data-quarto-table-cell-role="th">Tuition_Out_State</th>
+<th data-quarto-table-cell-role="th">Female_Share</th>
+<th data-quarto-table-cell-role="th">Race_White</th>
+<th data-quarto-table-cell-role="th">Race_Black</th>
+<th data-quarto-table-cell-role="th">Race_Hispanic</th>
+<th data-quarto-table-cell-role="th">Race_Asian</th>
+<th data-quarto-table-cell-role="th">Race_AIAN</th>
+<th data-quarto-table-cell-role="th">Race_NHPI</th>
+<th data-quarto-table-cell-role="th">Race_Two_Or_More</th>
+<th data-quarto-table-cell-role="th">Grad_Rate</th>
+<th data-quarto-table-cell-role="th">School_Name</th>
+<th data-quarto-table-cell-role="th">City</th>
+<th data-quarto-table-cell-role="th">State</th>
+<th data-quarto-table-cell-role="th">id</th>
+<th data-quarto-table-cell-role="th">July_Estimate_2024</th>
+<th data-quarto-table-cell-role="th">Region</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>5726.0</td>
+<td>10024.0</td>
+<td>18634.0</td>
+<td>0.564030</td>
+<td>0.0180</td>
+<td>0.9043</td>
+<td>0.0150</td>
+<td>0.0017</td>
+<td>0.0012</td>
+<td>0.0010</td>
+<td>0.0182</td>
+<td>0.2772</td>
+<td>Alabama A &amp; M University</td>
+<td>Normal</td>
+<td>AL</td>
+<td>100654</td>
+<td>2381817.0</td>
+<td>South</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>12118.0</td>
+<td>8832.0</td>
+<td>21864.0</td>
+<td>0.639091</td>
+<td>0.4832</td>
+<td>0.2657</td>
+<td>0.0776</td>
+<td>0.0915</td>
+<td>0.0020</td>
+<td>0.0007</td>
+<td>0.0515</td>
+<td>0.6345</td>
+<td>University of Alabama at Birmingham</td>
+<td>Birmingham</td>
+<td>AL</td>
+<td>100663</td>
+<td>2381817.0</td>
+<td>South</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>226.0</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.648649</td>
+<td>0.2788</td>
+<td>0.6681</td>
+<td>0.0310</td>
+<td>0.0000</td>
+<td>0.0044</td>
+<td>0.0044</td>
+<td>0.0000</td>
+<td>NaN</td>
+<td>Amridge University</td>
+<td>Montgomery</td>
+<td>AL</td>
+<td>100690</td>
+<td>2381817.0</td>
+<td>South</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>6650.0</td>
+<td>11770.0</td>
+<td>24662.0</td>
+<td>0.476350</td>
+<td>0.6940</td>
+<td>0.0907</td>
+<td>0.0719</td>
+<td>0.0423</td>
+<td>0.0074</td>
+<td>0.0015</td>
+<td>0.0508</td>
+<td>0.6240</td>
+<td>University of Alabama in Huntsville</td>
+<td>Huntsville</td>
+<td>AL</td>
+<td>100706</td>
+<td>2381817.0</td>
+<td>South</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>3322.0</td>
+<td>11248.0</td>
+<td>19576.0</td>
+<td>0.613419</td>
+<td>0.0223</td>
+<td>0.9082</td>
+<td>0.0111</td>
+<td>0.0018</td>
+<td>0.0015</td>
+<td>0.0012</td>
+<td>0.0126</td>
+<td>0.2884</td>
+<td>Alabama State University</td>
+<td>Montgomery</td>
+<td>AL</td>
+<td>100724</td>
+<td>2381817.0</td>
+<td>South</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>The table above shows the first few row of the data, this gives us an idea of what variable we are working with. For the purpose of this analysis we will be looking at what variables affect graduation rates.</p>
+<div id="ee04c7cb" class="cell" data-execution_count="3">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data.describe()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Student_Size</th>
+<th data-quarto-table-cell-role="th">Tuition_In_State</th>
+<th data-quarto-table-cell-role="th">Tuition_Out_State</th>
+<th data-quarto-table-cell-role="th">Female_Share</th>
+<th data-quarto-table-cell-role="th">Race_White</th>
+<th data-quarto-table-cell-role="th">Race_Black</th>
+<th data-quarto-table-cell-role="th">Race_Hispanic</th>
+<th data-quarto-table-cell-role="th">Race_Asian</th>
+<th data-quarto-table-cell-role="th">Race_AIAN</th>
+<th data-quarto-table-cell-role="th">Race_NHPI</th>
+<th data-quarto-table-cell-role="th">Race_Two_Or_More</th>
+<th data-quarto-table-cell-role="th">Grad_Rate</th>
+<th data-quarto-table-cell-role="th">id</th>
+<th data-quarto-table-cell-role="th">July_Estimate_2024</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">count</th>
+<td>937.000000</td>
+<td>726.000000</td>
+<td>726.000000</td>
+<td>863.000000</td>
+<td>937.000000</td>
+<td>937.000000</td>
+<td>937.000000</td>
+<td>937.000000</td>
+<td>937.000000</td>
+<td>937.000000</td>
+<td>937.000000</td>
+<td>878.000000</td>
+<td>1000.0000</td>
+<td>9.880000e+02</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">mean</th>
+<td>4894.967983</td>
+<td>16561.304408</td>
+<td>21765.334711</td>
+<td>0.605576</td>
+<td>0.398195</td>
+<td>0.166731</td>
+<td>0.256833</td>
+<td>0.057257</td>
+<td>0.009128</td>
+<td>0.003922</td>
+<td>0.043904</td>
+<td>0.506051</td>
+<td>126723.1950</td>
+<td>7.947942e+06</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">std</th>
+<td>8109.876927</td>
+<td>17451.585148</td>
+<td>15443.426078</td>
+<td>0.140958</td>
+<td>0.237496</td>
+<td>0.201430</td>
+<td>0.208431</td>
+<td>0.086143</td>
+<td>0.040523</td>
+<td>0.009823</td>
+<td>0.043415</td>
+<td>0.199975</td>
+<td>15159.9182</td>
+<td>5.400004e+06</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">min</th>
+<td>2.000000</td>
+<td>1104.000000</td>
+<td>1410.000000</td>
+<td>0.025592</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.016700</td>
+<td>100654.0000</td>
+<td>3.304630e+05</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">25%</th>
+<td>375.000000</td>
+<td>3372.000000</td>
+<td>9882.500000</td>
+<td>0.543774</td>
+<td>0.194500</td>
+<td>0.040600</td>
+<td>0.092100</td>
+<td>0.009900</td>
+<td>0.000900</td>
+<td>0.000000</td>
+<td>0.019600</td>
+<td>0.347400</td>
+<td>112439.7500</td>
+<td>3.026199e+06</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">50%</th>
+<td>1614.000000</td>
+<td>9343.000000</td>
+<td>15746.000000</td>
+<td>0.598770</td>
+<td>0.398600</td>
+<td>0.090700</td>
+<td>0.200000</td>
+<td>0.026200</td>
+<td>0.002500</td>
+<td>0.001300</td>
+<td>0.037500</td>
+<td>0.487700</td>
+<td>127171.5000</td>
+<td>5.482770e+06</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">75%</th>
+<td>5697.000000</td>
+<td>26268.750000</td>
+<td>30407.250000</td>
+<td>0.665277</td>
+<td>0.590500</td>
+<td>0.200000</td>
+<td>0.368500</td>
+<td>0.064900</td>
+<td>0.005900</td>
+<td>0.003500</td>
+<td>0.055300</td>
+<td>0.652075</td>
+<td>139988.2500</td>
+<td>1.487790e+07</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">max</th>
+<td>68619.000000</td>
+<td>68237.000000</td>
+<td>68237.000000</td>
+<td>0.978996</td>
+<td>0.993600</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>1.000000</td>
+<td>0.990700</td>
+<td>0.100000</td>
+<td>0.431900</td>
+<td>1.000000</td>
+<td>151388.0000</td>
+<td>1.487790e+07</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>The table above shows summary statistics for each variable in the dataframe.</p>
+<p>The following table is the count of N/A values after taking the averages of graduation rate, in state tuition, and out of stat tuition for each state and filling the na values with those mean values. Note there are still some unknown values for the categorical values.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Student_Size</td>
+<td>63</td>
+</tr>
+<tr class="even">
+<td>Tuition_In_State</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Tuition_Out_State</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Female_Share</td>
+<td>137</td>
+</tr>
+<tr class="odd">
+<td>Race_White</td>
+<td>63</td>
+</tr>
+<tr class="even">
+<td>Race_Black</td>
+<td>63</td>
+</tr>
+<tr class="odd">
+<td>Race_Hispanic</td>
+<td>63</td>
+</tr>
+<tr class="even">
+<td>Race_Asian</td>
+<td>63</td>
+</tr>
+<tr class="odd">
+<td>Race_AIAN</td>
+<td>63</td>
+</tr>
+<tr class="even">
+<td>Race_NHPI</td>
+<td>63</td>
+</tr>
+<tr class="odd">
+<td>Race_Two_Or_More</td>
+<td>63</td>
+</tr>
+<tr class="even">
+<td>Grad_Rate</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>School_Name</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>City</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>State</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>id</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>July_Estimate_2024</td>
+<td>12</td>
+</tr>
+<tr class="even">
+<td>Region</td>
+<td>374</td>
+</tr>
+</tbody>
+</table>
+<p>The following table is the count of occurrences for each state. Note that there is not data on all of the states in the U.S. this is due to the amount of data pulled from the API, only 1,000 schools were accounted for in the data, therefore the data will be skewed.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>State</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AK</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>AL</td>
+<td>55</td>
+</tr>
+<tr class="odd">
+<td>AR</td>
+<td>58</td>
+</tr>
+<tr class="even">
+<td>AZ</td>
+<td>40</td>
+</tr>
+<tr class="odd">
+<td>CA</td>
+<td>313</td>
+</tr>
+<tr class="even">
+<td>CO</td>
+<td>51</td>
+</tr>
+<tr class="odd">
+<td>CT</td>
+<td>35</td>
+</tr>
+<tr class="even">
+<td>DC</td>
+<td>12</td>
+</tr>
+<tr class="odd">
+<td>DE</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>FL</td>
+<td>122</td>
+</tr>
+<tr class="odd">
+<td>GA</td>
+<td>78</td>
+</tr>
+<tr class="even">
+<td>HI</td>
+<td>12</td>
+</tr>
+<tr class="odd">
+<td>ID</td>
+<td>14</td>
+</tr>
+<tr class="even">
+<td>IL</td>
+<td>156</td>
+</tr>
+<tr class="odd">
+<td>IN</td>
+<td>35</td>
+</tr>
+<tr class="even">
+<td>MN</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>NM</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>NY</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>There are many more schools to account for however this data is still useful.</p>
+<p>The data for the northern and southern regions have about the same amount of observations.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Region</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>North</td>
+<td>293</td>
+</tr>
+<tr class="even">
+<td>South</td>
+<td>333</td>
+</tr>
+</tbody>
+</table>
+<p>Next we can compute the mean graduation rate for each state in the dataset.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>State</th>
+<th>Mean Graduation Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AK</td>
+<td>0.491314</td>
+</tr>
+<tr class="even">
+<td>AL</td>
+<td>0.396898</td>
+</tr>
+<tr class="odd">
+<td>AR</td>
+<td>0.462617</td>
+</tr>
+<tr class="even">
+<td>AZ</td>
+<td>0.428985</td>
+</tr>
+<tr class="odd">
+<td>CA</td>
+<td>0.525233</td>
+</tr>
+<tr class="even">
+<td>CO</td>
+<td>0.517437</td>
+</tr>
+<tr class="odd">
+<td>CT</td>
+<td>0.625406</td>
+</tr>
+<tr class="even">
+<td>DC</td>
+<td>0.654925</td>
+</tr>
+<tr class="odd">
+<td>DE</td>
+<td>0.493286</td>
+</tr>
+<tr class="even">
+<td>FL</td>
+<td>0.551218</td>
+</tr>
+<tr class="odd">
+<td>GA</td>
+<td>0.435044</td>
+</tr>
+<tr class="even">
+<td>HI</td>
+<td>0.410892</td>
+</tr>
+<tr class="odd">
+<td>ID</td>
+<td>0.520750</td>
+</tr>
+<tr class="even">
+<td>IL</td>
+<td>0.511828</td>
+</tr>
+<tr class="odd">
+<td>IN</td>
+<td>0.534775</td>
+</tr>
+<tr class="even">
+<td>MN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<td>NM</td>
+<td>0.537000</td>
+</tr>
+<tr class="even">
+<td>NY</td>
+<td>0.125000</td>
+</tr>
+</tbody>
+</table>
+<p>It is interesting to note that the District of Columbia, which is a territory has the highest graduation rate, with Connecticut following as a close second. Again we really can’t pull reliable inferences from this since the sample sizes are skewed, especially since New York, which has some of the most prestigious universities in the country, has the lowest graduation rate and only one singular occurrence in the dataset.</p>
+<p>We can run a regression model on the following variables and see if any are statistically significant.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Intercept</strong></td>
+<td>0.28883021499055983</td>
+</tr>
+<tr class="even">
+<td><strong>Student_Size</strong></td>
+<td>2.19323220e-06</td>
+</tr>
+<tr class="odd">
+<td><strong>Tuition_In_State</strong></td>
+<td>-2.38317495e-06</td>
+</tr>
+<tr class="even">
+<td><strong>Tuition_Out_State</strong></td>
+<td>1.14899535e-05</td>
+</tr>
+<tr class="odd">
+<td><strong>Region_numeric</strong></td>
+<td>-3.72713468e-02</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Mean Squared Error</strong></td>
+<td>0.020479592983903977</td>
+</tr>
+<tr class="even">
+<td><strong>R-squared</strong></td>
+<td>0.2711396143816296</td>
+</tr>
+</tbody>
+</table>
+<p>We cannot pull inference from this model, however it is interesting to see if there is an interaction between certain variables.</p>
+</section>
+<section id="plots" class="level3">
+<h3 class="anchored" data-anchor-id="plots">Plots</h3>
+<div id="d40572aa" class="cell" data-execution_count="4">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>data, x<span class="op">=</span><span class="st">"Tuition_In_State"</span>, y<span class="op">=</span><span class="st">"Grad_Rate"</span>, hue<span class="op">=</span><span class="st">"Region"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Tuition In State'</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Graduation Rate'</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'In State Tuition Vs. Grad Rate'</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data-acquisition_files/figure-html/cell-5-output-1.png" width="601" height="449" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The plot above shows in state tuition prices plotted against graduation rates, with the colors corresponding to north and south regions of the U.S. It is interesting to note that there appears to be a linear relationship between higher tuition prices and graduation rate.</p>
+<div id="15fb52ca" class="cell" data-execution_count="5">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>data, x<span class="op">=</span><span class="st">"Tuition_Out_State"</span>, y<span class="op">=</span><span class="st">"Grad_Rate"</span>, hue<span class="op">=</span><span class="st">"Region"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Tuition Out State'</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Graduation Rate'</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Out of State Tuition Vs. Grad Rate'</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data-acquisition_files/figure-html/cell-6-output-1.png" width="602" height="449" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We can plot the the relationship between out of state tuition and graduation rates as well. From the plot we again see that there appears to be a linear relationship between the variables.</p>
+<p>The following boxplots can help gather more inference on graduation rates for the different states.</p>
+<div id="c6564a60" class="cell" data-execution_count="6">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Box plots for mean graduation rate</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style <span class="op">=</span> <span class="st">"ticks"</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>f, ax <span class="op">=</span> plt.subplots(figsize <span class="op">=</span>(<span class="dv">7</span>,<span class="dv">6</span>))</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>ax.set_xscale(<span class="st">"log"</span>)</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>sns.boxplot(</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    data, x<span class="op">=</span><span class="st">"Grad_Rate"</span>, y<span class="op">=</span><span class="st">"State"</span>, hue <span class="op">=</span> <span class="st">"State"</span>,</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    whis<span class="op">=</span>[<span class="dv">0</span>,<span class="dv">10</span>], width <span class="op">=</span> <span class="fl">.6</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>ax.xaxis.grid(<span class="va">True</span>)</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(ylabel<span class="op">=</span><span class="st">""</span>)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>sns.despine(trim<span class="op">=</span><span class="va">True</span>, left<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data-acquisition_files/figure-html/cell-7-output-1.png" width="575" height="515" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We can do the same for tuition prices, this plot uses out of state tuition data.</p>
+<div id="306043ee" class="cell" data-execution_count="7">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Box plots for mean out of state tuition</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style <span class="op">=</span> <span class="st">"ticks"</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>f, ax <span class="op">=</span> plt.subplots(figsize <span class="op">=</span>(<span class="dv">7</span>,<span class="dv">6</span>))</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>ax.set_xscale(<span class="st">"log"</span>)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>sns.boxplot(</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    data, x<span class="op">=</span><span class="st">"Tuition_Out_State"</span>, y<span class="op">=</span><span class="st">"State"</span>, hue <span class="op">=</span> <span class="st">"State"</span>,</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    whis<span class="op">=</span>[<span class="dv">0</span>,<span class="dv">10</span>], width <span class="op">=</span> <span class="fl">.6</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>ax.xaxis.grid(<span class="va">True</span>)</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(ylabel<span class="op">=</span><span class="st">""</span>)</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>sns.despine(trim<span class="op">=</span><span class="va">True</span>, left<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data-acquisition_files/figure-html/cell-8-output-1.png" width="575" height="515" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>These highlights of the data help us understand that while more information and data is needed to pull reliable inferences, we can see that higher tuition prices could result in higher graduation rate in U.S. colleges.</p>
+</section>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><p><a href="https://www.census.gov/data/developers/data-sets.html">U.S. Census Bureau</a></p></li>
+<li><p><a href="https://collegescorecard.ed.gov/data/api-documentation">College Scorecard</a></p></li>
+<li><p><a href="https://www.bestcolleges.com/research/college-graduation-rates/">More information about graduation rates.</a></p></li>
+</ul>
+</section>
+<section id="code-links" class="level2">
+<h2 class="anchored" data-anchor-id="code-links">Code Links</h2>
+<p>Fork the repository below to view the code used to create and merge the datasets, as well as the EDA process.</p>
+<ul>
+<li><a href="https://github.com/JNSREB2023/Data_Blog">Code for data analysis</a></li>
+</ul>
+</section>
+<section id="disclaimers" class="level2">
+<h2 class="anchored" data-anchor-id="disclaimers">Disclaimers</h2>
+<p>This product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau.</p>
 
 
 <!-- -->
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -317,13 +1169,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -716,17 +1569,279 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Data Acquisition Project"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Your Name"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-01-01"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>This is coming down the pipeline. Check again later.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Data Acquisition Project"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Bekah Jensen"</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-11-12"</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error, r2_score</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="fu"># U.S. Colleges and Graduation Rates</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="fu">### An analysis of 1,000 U.S. colleges graduation rates.</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>The purpose of this blog is to show an in depth analysis of the affects on graduations rates of U.S. colleges. The analysis studies 1,000 colleges with information on student size, tuition prices, diversity, region, and graduation rates. Studying this information could be useful in determining what factors help students graduate. Those inquiring about a future college career could use the information when deciding where to attend school.</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>Education is crucial for societal purposes. Education allows people to become evolved thinkers, be active participants in society, and the economy. Learning what factors help students graduate could help increase overall graduation rates. While this analysis does give some insight on what influences graduation rates, this information should not be used and cited as this is not an official analysis.</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="fu">## Motivation</span></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>From this analysis it is my hope that I learn more about the data cleaning process and analysis. I am hoping to gain a better understanding of demographics from different colleges across the nation.</span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>With these goals I also hope to provide insight on the dataset created. </span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ethical Data Practices</span></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>The data is acquired from the U.S. Census Bureau and the College Scorecard by the U.S. Department of Education.</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>Data gathered from the U.S. Census Bureau and College Scorecard is allowed because it is public data. Anyone can access the data as long as it is not used to identify any individual person, household, business or other entity. The Bureau also requests that the following disclaimer be made: "This product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau." </span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>Using these guidelines I was able to determine that use of this data for the purpose of my research question was ethical. I acquired API keys specifically assigned to myself and these keys were not published and cannot be accessed via the cleaning process and exploratory data analysis. </span>
+<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## A Short Note on Acquiring the Data</span></span>
+<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a>This analysis uses one datasets that has been cleaned and merged from two datasets, one with information about colleges, the other about state populations. </span>
+<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a>The <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.census.gov/data/developers/data-sets.html"</span><span class="dt">&gt;</span>U.S. Census Bureau<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span> and <span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://collegescorecard.ed.gov/data/api-documentation"</span><span class="dt">&gt;</span>College Scorecard<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span> have in depth information about downloading data, acquiring, and use of APIs and keys. To get started follow the instructions on those sites. Once you have the two different datasets, clean them and merge to get one dataframe that includes the following columns:</span>
+<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Student_Size</span>
+<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tuition_In_State</span>
+<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tuition_Out_State</span>
+<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Female_Share</span>
+<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Race_White</span>
+<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Race_Black</span>
+<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Race_Hispanic</span>
+<span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Race_Asian</span>
+<span id="cb8-62"><a href="#cb8-62" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Race_AIAN</span>
+<span id="cb8-63"><a href="#cb8-63" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Race_NHPI</span>
+<span id="cb8-64"><a href="#cb8-64" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Race_Two_Or_More</span>
+<span id="cb8-65"><a href="#cb8-65" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Grad_Rate</span>
+<span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>School_Name</span>
+<span id="cb8-67"><a href="#cb8-67" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>City,State</span>
+<span id="cb8-68"><a href="#cb8-68" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>id</span>
+<span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>July_Estimate_2024</span>
+<span id="cb8-70"><a href="#cb8-70" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Region</span>
+<span id="cb8-71"><a href="#cb8-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-72"><a href="#cb8-72" aria-hidden="true" tabindex="-1"></a><span class="fu">## EDA Highlights</span></span>
+<span id="cb8-73"><a href="#cb8-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-74"><a href="#cb8-74" aria-hidden="true" tabindex="-1"></a><span class="fu">### Summary Statistics</span></span>
+<span id="cb8-75"><a href="#cb8-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-78"><a href="#cb8-78" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb8-79"><a href="#cb8-79" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_csv(<span class="st">'data/college_state_pop.csv'</span>)</span>
+<span id="cb8-80"><a href="#cb8-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-81"><a href="#cb8-81" aria-hidden="true" tabindex="-1"></a>data.head()</span>
+<span id="cb8-82"><a href="#cb8-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-83"><a href="#cb8-83" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-84"><a href="#cb8-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-85"><a href="#cb8-85" aria-hidden="true" tabindex="-1"></a>The table above shows the first few row of the data, this gives us an idea of what variable we are working with. For the purpose of this analysis we will be looking at what variables affect graduation rates. </span>
+<span id="cb8-88"><a href="#cb8-88" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb8-89"><a href="#cb8-89" aria-hidden="true" tabindex="-1"></a>data.describe()</span>
+<span id="cb8-90"><a href="#cb8-90" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-91"><a href="#cb8-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-92"><a href="#cb8-92" aria-hidden="true" tabindex="-1"></a>The table above shows summary statistics for each variable in the dataframe. </span>
+<span id="cb8-93"><a href="#cb8-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-94"><a href="#cb8-94" aria-hidden="true" tabindex="-1"></a>The following table is the count of N/A values after taking the averages of graduation rate, in state tuition, and out of stat tuition for each state and filling the na values with those mean values. Note there are still some unknown values for the categorical values.</span>
+<span id="cb8-95"><a href="#cb8-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-96"><a href="#cb8-96" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Variable             <span class="pp">|</span> Count <span class="pp">|</span></span>
+<span id="cb8-97"><a href="#cb8-97" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------------------|--------|</span></span>
+<span id="cb8-98"><a href="#cb8-98" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Student_Size         <span class="pp">|</span> 63     <span class="pp">|</span></span>
+<span id="cb8-99"><a href="#cb8-99" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tuition_In_State     <span class="pp">|</span> 1      <span class="pp">|</span></span>
+<span id="cb8-100"><a href="#cb8-100" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tuition_Out_State    <span class="pp">|</span> 1      <span class="pp">|</span></span>
+<span id="cb8-101"><a href="#cb8-101" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Female_Share         <span class="pp">|</span> 137    <span class="pp">|</span></span>
+<span id="cb8-102"><a href="#cb8-102" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Race_White           <span class="pp">|</span> 63     <span class="pp">|</span></span>
+<span id="cb8-103"><a href="#cb8-103" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Race_Black           <span class="pp">|</span> 63     <span class="pp">|</span></span>
+<span id="cb8-104"><a href="#cb8-104" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Race_Hispanic        <span class="pp">|</span> 63     <span class="pp">|</span></span>
+<span id="cb8-105"><a href="#cb8-105" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Race_Asian           <span class="pp">|</span> 63     <span class="pp">|</span></span>
+<span id="cb8-106"><a href="#cb8-106" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Race_AIAN            <span class="pp">|</span> 63     <span class="pp">|</span></span>
+<span id="cb8-107"><a href="#cb8-107" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Race_NHPI            <span class="pp">|</span> 63     <span class="pp">|</span></span>
+<span id="cb8-108"><a href="#cb8-108" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Race_Two_Or_More     <span class="pp">|</span> 63     <span class="pp">|</span></span>
+<span id="cb8-109"><a href="#cb8-109" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Grad_Rate            <span class="pp">|</span> 1      <span class="pp">|</span></span>
+<span id="cb8-110"><a href="#cb8-110" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> School_Name          <span class="pp">|</span> 0      <span class="pp">|</span></span>
+<span id="cb8-111"><a href="#cb8-111" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> City                 <span class="pp">|</span> 0      <span class="pp">|</span></span>
+<span id="cb8-112"><a href="#cb8-112" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> State                <span class="pp">|</span> 0      <span class="pp">|</span></span>
+<span id="cb8-113"><a href="#cb8-113" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> id                   <span class="pp">|</span> 0      <span class="pp">|</span></span>
+<span id="cb8-114"><a href="#cb8-114" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> July_Estimate_2024   <span class="pp">|</span> 12     <span class="pp">|</span></span>
+<span id="cb8-115"><a href="#cb8-115" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Region               <span class="pp">|</span> 374    <span class="pp">|</span></span>
+<span id="cb8-116"><a href="#cb8-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-117"><a href="#cb8-117" aria-hidden="true" tabindex="-1"></a>The following table is the count of occurrences for each state. Note that there is not data on all of the states in the U.S. this is due to the amount of data pulled from the API, only 1,000 schools were accounted for in the data, therefore the data will be skewed. </span>
+<span id="cb8-118"><a href="#cb8-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-119"><a href="#cb8-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-120"><a href="#cb8-120" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> State <span class="pp">|</span> Count <span class="pp">|</span></span>
+<span id="cb8-121"><a href="#cb8-121" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|--------|</span></span>
+<span id="cb8-122"><a href="#cb8-122" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AK     <span class="pp">|</span> 8      <span class="pp">|</span></span>
+<span id="cb8-123"><a href="#cb8-123" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AL     <span class="pp">|</span> 55     <span class="pp">|</span></span>
+<span id="cb8-124"><a href="#cb8-124" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AR     <span class="pp">|</span> 58     <span class="pp">|</span></span>
+<span id="cb8-125"><a href="#cb8-125" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AZ     <span class="pp">|</span> 40     <span class="pp">|</span></span>
+<span id="cb8-126"><a href="#cb8-126" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CA     <span class="pp">|</span> 313    <span class="pp">|</span></span>
+<span id="cb8-127"><a href="#cb8-127" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CO     <span class="pp">|</span> 51     <span class="pp">|</span></span>
+<span id="cb8-128"><a href="#cb8-128" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CT     <span class="pp">|</span> 35     <span class="pp">|</span></span>
+<span id="cb8-129"><a href="#cb8-129" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> DC     <span class="pp">|</span> 12     <span class="pp">|</span></span>
+<span id="cb8-130"><a href="#cb8-130" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> DE     <span class="pp">|</span> 8      <span class="pp">|</span></span>
+<span id="cb8-131"><a href="#cb8-131" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> FL     <span class="pp">|</span> 122    <span class="pp">|</span></span>
+<span id="cb8-132"><a href="#cb8-132" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> GA     <span class="pp">|</span> 78     <span class="pp">|</span></span>
+<span id="cb8-133"><a href="#cb8-133" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> HI     <span class="pp">|</span> 12     <span class="pp">|</span></span>
+<span id="cb8-134"><a href="#cb8-134" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ID     <span class="pp">|</span> 14     <span class="pp">|</span></span>
+<span id="cb8-135"><a href="#cb8-135" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IL     <span class="pp">|</span> 156    <span class="pp">|</span></span>
+<span id="cb8-136"><a href="#cb8-136" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IN     <span class="pp">|</span> 35     <span class="pp">|</span></span>
+<span id="cb8-137"><a href="#cb8-137" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> MN     <span class="pp">|</span> 1      <span class="pp">|</span></span>
+<span id="cb8-138"><a href="#cb8-138" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> NM     <span class="pp">|</span> 1      <span class="pp">|</span></span>
+<span id="cb8-139"><a href="#cb8-139" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> NY     <span class="pp">|</span> 1      <span class="pp">|</span></span>
+<span id="cb8-140"><a href="#cb8-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-141"><a href="#cb8-141" aria-hidden="true" tabindex="-1"></a>There are many more schools to account for however this data is still useful. </span>
+<span id="cb8-142"><a href="#cb8-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-143"><a href="#cb8-143" aria-hidden="true" tabindex="-1"></a>The data for the northern and southern regions have about the same amount of observations. </span>
+<span id="cb8-144"><a href="#cb8-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-145"><a href="#cb8-145" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Region  <span class="pp">|</span>          <span class="pp">|</span></span>
+<span id="cb8-146"><a href="#cb8-146" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------|----------|</span></span>
+<span id="cb8-147"><a href="#cb8-147" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>North    <span class="pp">|</span>293       <span class="pp">|</span></span>
+<span id="cb8-148"><a href="#cb8-148" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span>South    <span class="pp">|</span>333       <span class="pp">|</span> </span>
+<span id="cb8-149"><a href="#cb8-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-150"><a href="#cb8-150" aria-hidden="true" tabindex="-1"></a>Next we can compute the mean graduation rate for each state in the dataset.</span>
+<span id="cb8-151"><a href="#cb8-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-152"><a href="#cb8-152" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> State <span class="pp">|</span> Mean Graduation Rate <span class="pp">|</span></span>
+<span id="cb8-153"><a href="#cb8-153" aria-hidden="true" tabindex="-1"></a><span class="pp">|--------|-----------------------|</span></span>
+<span id="cb8-154"><a href="#cb8-154" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AK     <span class="pp">|</span> 0.491314 <span class="pp">|</span></span>
+<span id="cb8-155"><a href="#cb8-155" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AL     <span class="pp">|</span> 0.396898 <span class="pp">|</span></span>
+<span id="cb8-156"><a href="#cb8-156" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AR     <span class="pp">|</span> 0.462617 <span class="pp">|</span></span>
+<span id="cb8-157"><a href="#cb8-157" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> AZ     <span class="pp">|</span> 0.428985 <span class="pp">|</span></span>
+<span id="cb8-158"><a href="#cb8-158" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CA     <span class="pp">|</span> 0.525233 <span class="pp">|</span></span>
+<span id="cb8-159"><a href="#cb8-159" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CO     <span class="pp">|</span> 0.517437 <span class="pp">|</span></span>
+<span id="cb8-160"><a href="#cb8-160" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CT     <span class="pp">|</span> 0.625406 <span class="pp">|</span></span>
+<span id="cb8-161"><a href="#cb8-161" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> DC     <span class="pp">|</span> 0.654925 <span class="pp">|</span></span>
+<span id="cb8-162"><a href="#cb8-162" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> DE     <span class="pp">|</span> 0.493286 <span class="pp">|</span></span>
+<span id="cb8-163"><a href="#cb8-163" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> FL     <span class="pp">|</span> 0.551218 <span class="pp">|</span></span>
+<span id="cb8-164"><a href="#cb8-164" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> GA     <span class="pp">|</span> 0.435044 <span class="pp">|</span></span>
+<span id="cb8-165"><a href="#cb8-165" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> HI     <span class="pp">|</span> 0.410892 <span class="pp">|</span></span>
+<span id="cb8-166"><a href="#cb8-166" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> ID     <span class="pp">|</span> 0.520750 <span class="pp">|</span></span>
+<span id="cb8-167"><a href="#cb8-167" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IL     <span class="pp">|</span> 0.511828 <span class="pp">|</span></span>
+<span id="cb8-168"><a href="#cb8-168" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IN     <span class="pp">|</span> 0.534775 <span class="pp">|</span></span>
+<span id="cb8-169"><a href="#cb8-169" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> MN     <span class="pp">|</span> NaN <span class="pp">|</span></span>
+<span id="cb8-170"><a href="#cb8-170" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> NM     <span class="pp">|</span> 0.537000 <span class="pp">|</span></span>
+<span id="cb8-171"><a href="#cb8-171" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> NY     <span class="pp">|</span> 0.125000 <span class="pp">|</span></span>
+<span id="cb8-172"><a href="#cb8-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-173"><a href="#cb8-173" aria-hidden="true" tabindex="-1"></a>It is interesting to note that the District of Columbia, which is a territory has the highest graduation rate, with Connecticut following as a close second. Again we really can't pull reliable inferences from this since the sample sizes are skewed, especially since New York, which has some of the most prestigious universities in the country, has the lowest graduation rate and only one singular occurrence in the dataset. </span>
+<span id="cb8-174"><a href="#cb8-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-175"><a href="#cb8-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-176"><a href="#cb8-176" aria-hidden="true" tabindex="-1"></a>We can run a regression model on the following variables and see if any are statistically significant. </span>
+<span id="cb8-177"><a href="#cb8-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-178"><a href="#cb8-178" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Term                <span class="pp">|</span> Coefficient          <span class="pp">|</span></span>
+<span id="cb8-179"><a href="#cb8-179" aria-hidden="true" tabindex="-1"></a><span class="pp">|----------------------|----------------------|</span></span>
+<span id="cb8-180"><a href="#cb8-180" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Intercept**        <span class="pp">|</span> 0.28883021499055983  <span class="pp">|</span></span>
+<span id="cb8-181"><a href="#cb8-181" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Student_Size**     <span class="pp">|</span> 2.19323220e-06       <span class="pp">|</span></span>
+<span id="cb8-182"><a href="#cb8-182" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Tuition_In_State** <span class="pp">|</span> -2.38317495e-06      <span class="pp">|</span></span>
+<span id="cb8-183"><a href="#cb8-183" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Tuition_Out_State**<span class="pp">|</span> 1.14899535e-05       <span class="pp">|</span></span>
+<span id="cb8-184"><a href="#cb8-184" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Region_numeric**   <span class="pp">|</span> -3.72713468e-02      <span class="pp">|</span></span>
+<span id="cb8-185"><a href="#cb8-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-186"><a href="#cb8-186" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Metric                <span class="pp">|</span> Value                 <span class="pp">|</span></span>
+<span id="cb8-187"><a href="#cb8-187" aria-hidden="true" tabindex="-1"></a><span class="pp">|------------------------|-----------------------|</span></span>
+<span id="cb8-188"><a href="#cb8-188" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **Mean Squared Error** <span class="pp">|</span> 0.020479592983903977  <span class="pp">|</span></span>
+<span id="cb8-189"><a href="#cb8-189" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> **R-squared**          <span class="pp">|</span> 0.2711396143816296    <span class="pp">|</span></span>
+<span id="cb8-190"><a href="#cb8-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-191"><a href="#cb8-191" aria-hidden="true" tabindex="-1"></a>We cannot pull inference from this model, however it is interesting to see if there is an interaction between certain variables.</span>
+<span id="cb8-192"><a href="#cb8-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-193"><a href="#cb8-193" aria-hidden="true" tabindex="-1"></a><span class="fu">### Plots</span></span>
+<span id="cb8-194"><a href="#cb8-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-197"><a href="#cb8-197" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb8-198"><a href="#cb8-198" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>data, x<span class="op">=</span><span class="st">"Tuition_In_State"</span>, y<span class="op">=</span><span class="st">"Grad_Rate"</span>, hue<span class="op">=</span><span class="st">"Region"</span>)</span>
+<span id="cb8-199"><a href="#cb8-199" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Tuition In State'</span>)</span>
+<span id="cb8-200"><a href="#cb8-200" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Graduation Rate'</span>)</span>
+<span id="cb8-201"><a href="#cb8-201" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'In State Tuition Vs. Grad Rate'</span>)</span>
+<span id="cb8-202"><a href="#cb8-202" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb8-203"><a href="#cb8-203" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb8-204"><a href="#cb8-204" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-205"><a href="#cb8-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-206"><a href="#cb8-206" aria-hidden="true" tabindex="-1"></a>The plot above shows in state tuition prices plotted against graduation rates, with the colors corresponding to north and south regions of the U.S. It is interesting to note that there appears to be a linear relationship between higher tuition prices and graduation rate.</span>
+<span id="cb8-207"><a href="#cb8-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-210"><a href="#cb8-210" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb8-211"><a href="#cb8-211" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>data, x<span class="op">=</span><span class="st">"Tuition_Out_State"</span>, y<span class="op">=</span><span class="st">"Grad_Rate"</span>, hue<span class="op">=</span><span class="st">"Region"</span>)</span>
+<span id="cb8-212"><a href="#cb8-212" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Tuition Out State'</span>)</span>
+<span id="cb8-213"><a href="#cb8-213" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Graduation Rate'</span>)</span>
+<span id="cb8-214"><a href="#cb8-214" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Out of State Tuition Vs. Grad Rate'</span>)</span>
+<span id="cb8-215"><a href="#cb8-215" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb8-216"><a href="#cb8-216" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb8-217"><a href="#cb8-217" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-218"><a href="#cb8-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-219"><a href="#cb8-219" aria-hidden="true" tabindex="-1"></a>We can plot the the relationship between out of state tuition and graduation rates as well. From the plot we again see that there appears to be a linear relationship between the variables.</span>
+<span id="cb8-220"><a href="#cb8-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-221"><a href="#cb8-221" aria-hidden="true" tabindex="-1"></a>The following boxplots can help gather more inference on graduation rates for the different states. </span>
+<span id="cb8-222"><a href="#cb8-222" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-225"><a href="#cb8-225" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb8-226"><a href="#cb8-226" aria-hidden="true" tabindex="-1"></a><span class="co"># Box plots for mean graduation rate</span></span>
+<span id="cb8-227"><a href="#cb8-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-228"><a href="#cb8-228" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style <span class="op">=</span> <span class="st">"ticks"</span>)</span>
+<span id="cb8-229"><a href="#cb8-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-230"><a href="#cb8-230" aria-hidden="true" tabindex="-1"></a>f, ax <span class="op">=</span> plt.subplots(figsize <span class="op">=</span>(<span class="dv">7</span>,<span class="dv">6</span>))</span>
+<span id="cb8-231"><a href="#cb8-231" aria-hidden="true" tabindex="-1"></a>ax.set_xscale(<span class="st">"log"</span>)</span>
+<span id="cb8-232"><a href="#cb8-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-233"><a href="#cb8-233" aria-hidden="true" tabindex="-1"></a>sns.boxplot(</span>
+<span id="cb8-234"><a href="#cb8-234" aria-hidden="true" tabindex="-1"></a>    data, x<span class="op">=</span><span class="st">"Grad_Rate"</span>, y<span class="op">=</span><span class="st">"State"</span>, hue <span class="op">=</span> <span class="st">"State"</span>,</span>
+<span id="cb8-235"><a href="#cb8-235" aria-hidden="true" tabindex="-1"></a>    whis<span class="op">=</span>[<span class="dv">0</span>,<span class="dv">10</span>], width <span class="op">=</span> <span class="fl">.6</span></span>
+<span id="cb8-236"><a href="#cb8-236" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-237"><a href="#cb8-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-238"><a href="#cb8-238" aria-hidden="true" tabindex="-1"></a>ax.xaxis.grid(<span class="va">True</span>)</span>
+<span id="cb8-239"><a href="#cb8-239" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(ylabel<span class="op">=</span><span class="st">""</span>)</span>
+<span id="cb8-240"><a href="#cb8-240" aria-hidden="true" tabindex="-1"></a>sns.despine(trim<span class="op">=</span><span class="va">True</span>, left<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-241"><a href="#cb8-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-242"><a href="#cb8-242" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-243"><a href="#cb8-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-244"><a href="#cb8-244" aria-hidden="true" tabindex="-1"></a>We can do the same for tuition prices, this plot uses out of state tuition data. </span>
+<span id="cb8-245"><a href="#cb8-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-248"><a href="#cb8-248" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb8-249"><a href="#cb8-249" aria-hidden="true" tabindex="-1"></a><span class="co"># Box plots for mean out of state tuition</span></span>
+<span id="cb8-250"><a href="#cb8-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-251"><a href="#cb8-251" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style <span class="op">=</span> <span class="st">"ticks"</span>)</span>
+<span id="cb8-252"><a href="#cb8-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-253"><a href="#cb8-253" aria-hidden="true" tabindex="-1"></a>f, ax <span class="op">=</span> plt.subplots(figsize <span class="op">=</span>(<span class="dv">7</span>,<span class="dv">6</span>))</span>
+<span id="cb8-254"><a href="#cb8-254" aria-hidden="true" tabindex="-1"></a>ax.set_xscale(<span class="st">"log"</span>)</span>
+<span id="cb8-255"><a href="#cb8-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-256"><a href="#cb8-256" aria-hidden="true" tabindex="-1"></a>sns.boxplot(</span>
+<span id="cb8-257"><a href="#cb8-257" aria-hidden="true" tabindex="-1"></a>    data, x<span class="op">=</span><span class="st">"Tuition_Out_State"</span>, y<span class="op">=</span><span class="st">"State"</span>, hue <span class="op">=</span> <span class="st">"State"</span>,</span>
+<span id="cb8-258"><a href="#cb8-258" aria-hidden="true" tabindex="-1"></a>    whis<span class="op">=</span>[<span class="dv">0</span>,<span class="dv">10</span>], width <span class="op">=</span> <span class="fl">.6</span></span>
+<span id="cb8-259"><a href="#cb8-259" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-260"><a href="#cb8-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-261"><a href="#cb8-261" aria-hidden="true" tabindex="-1"></a>ax.xaxis.grid(<span class="va">True</span>)</span>
+<span id="cb8-262"><a href="#cb8-262" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(ylabel<span class="op">=</span><span class="st">""</span>)</span>
+<span id="cb8-263"><a href="#cb8-263" aria-hidden="true" tabindex="-1"></a>sns.despine(trim<span class="op">=</span><span class="va">True</span>, left<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb8-264"><a href="#cb8-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-265"><a href="#cb8-265" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb8-266"><a href="#cb8-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-267"><a href="#cb8-267" aria-hidden="true" tabindex="-1"></a>These highlights of the data help us understand that while more information and data is needed to pull reliable inferences, we can see that higher tuition prices could result in higher graduation rate in U.S. colleges.</span>
+<span id="cb8-268"><a href="#cb8-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-269"><a href="#cb8-269" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resources</span></span>
+<span id="cb8-270"><a href="#cb8-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-271"><a href="#cb8-271" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.census.gov/data/developers/data-sets.html"</span><span class="dt">&gt;</span>U.S. Census Bureau<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb8-272"><a href="#cb8-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-273"><a href="#cb8-273" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://collegescorecard.ed.gov/data/api-documentation"</span><span class="dt">&gt;</span>College Scorecard<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb8-274"><a href="#cb8-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-275"><a href="#cb8-275" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.bestcolleges.com/research/college-graduation-rates/"</span><span class="dt">&gt;</span>More information about graduation rates.<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb8-276"><a href="#cb8-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-277"><a href="#cb8-277" aria-hidden="true" tabindex="-1"></a><span class="fu">## Code Links</span></span>
+<span id="cb8-278"><a href="#cb8-278" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-279"><a href="#cb8-279" aria-hidden="true" tabindex="-1"></a>Fork the repository below to view the code used to create and merge the datasets, as well as the EDA process.</span>
+<span id="cb8-280"><a href="#cb8-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-281"><a href="#cb8-281" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://github.com/JNSREB2023/Data_Blog"</span><span class="dt">&gt;</span>Code for data analysis<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
+<span id="cb8-282"><a href="#cb8-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-283"><a href="#cb8-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-284"><a href="#cb8-284" aria-hidden="true" tabindex="-1"></a><span class="fu">## Disclaimers</span></span>
+<span id="cb8-285"><a href="#cb8-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-286"><a href="#cb8-286" aria-hidden="true" tabindex="-1"></a>This product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau.</span>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

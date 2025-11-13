@@ -104,7 +104,7 @@
     "href": "projects/data-acquisition.html",
     "title": "Data Acquisition Project",
     "section": "",
-    "text": "This is coming down the pipeline. Check again later.",
+    "text": "Code\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport numpy as np\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.metrics import mean_squared_error, r2_score",
     "crumbs": [
       "Data Acquisition Project"
     ]
@@ -117,6 +117,86 @@
     "text": "This is coming down the pipeline. Check again later.",
     "crumbs": [
       "Final Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#introduction",
+    "href": "projects/data-acquisition.html#introduction",
+    "title": "Data Acquisition Project",
+    "section": "Introduction",
+    "text": "Introduction\nThe purpose of this blog is to show an in depth analysis of the affects on graduations rates of U.S. colleges. The analysis studies 1,000 colleges with information on student size, tuition prices, diversity, region, and graduation rates. Studying this information could be useful in determining what factors help students graduate. Those inquiring about a future college career could use the information when deciding where to attend school.\nEducation is crucial for societal purposes. Education allows people to become evolved thinkers, be active participants in society, and the economy. Learning what factors help students graduate could help increase overall graduation rates. While this analysis does give some insight on what influences graduation rates, this information should not be used and cited as this is not an official analysis.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#motivation",
+    "href": "projects/data-acquisition.html#motivation",
+    "title": "Data Acquisition Project",
+    "section": "Motivation",
+    "text": "Motivation\nFrom this analysis it is my hope that I learn more about the data cleaning process and analysis. I am hoping to gain a better understanding of demographics from different colleges across the nation.\nWith these goals I also hope to provide insight on the dataset created.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#ethical-data-practices",
+    "href": "projects/data-acquisition.html#ethical-data-practices",
+    "title": "Data Acquisition Project",
+    "section": "Ethical Data Practices",
+    "text": "Ethical Data Practices\nThe data is acquired from the U.S. Census Bureau and the College Scorecard by the U.S. Department of Education.\nData gathered from the U.S. Census Bureau and College Scorecard is allowed because it is public data. Anyone can access the data as long as it is not used to identify any individual person, household, business or other entity. The Bureau also requests that the following disclaimer be made: “This product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau.”\nUsing these guidelines I was able to determine that use of this data for the purpose of my research question was ethical. I acquired API keys specifically assigned to myself and these keys were not published and cannot be accessed via the cleaning process and exploratory data analysis.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#a-short-note-on-acquiring-the-data",
+    "href": "projects/data-acquisition.html#a-short-note-on-acquiring-the-data",
+    "title": "Data Acquisition Project",
+    "section": "A Short Note on Acquiring the Data",
+    "text": "A Short Note on Acquiring the Data\nThis analysis uses one datasets that has been cleaned and merged from two datasets, one with information about colleges, the other about state populations.\nThe U.S. Census Bureau and College Scorecard have in depth information about downloading data, acquiring, and use of APIs and keys. To get started follow the instructions on those sites. Once you have the two different datasets, clean them and merge to get one dataframe that includes the following columns:\n\nStudent_Size\nTuition_In_State\nTuition_Out_State\nFemale_Share\nRace_White\nRace_Black\nRace_Hispanic\nRace_Asian\nRace_AIAN\nRace_NHPI\nRace_Two_Or_More\nGrad_Rate\nSchool_Name\nCity,State\nid\nJuly_Estimate_2024\nRegion",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#eda-highlights",
+    "href": "projects/data-acquisition.html#eda-highlights",
+    "title": "Data Acquisition Project",
+    "section": "EDA Highlights",
+    "text": "EDA Highlights\n\nSummary Statistics\n\n\nCode\ndata = pd.read_csv('data/college_state_pop.csv')\n\ndata.head()\n\n\n\n\n\n\n\n\n\nStudent_Size\nTuition_In_State\nTuition_Out_State\nFemale_Share\nRace_White\nRace_Black\nRace_Hispanic\nRace_Asian\nRace_AIAN\nRace_NHPI\nRace_Two_Or_More\nGrad_Rate\nSchool_Name\nCity\nState\nid\nJuly_Estimate_2024\nRegion\n\n\n\n\n0\n5726.0\n10024.0\n18634.0\n0.564030\n0.0180\n0.9043\n0.0150\n0.0017\n0.0012\n0.0010\n0.0182\n0.2772\nAlabama A & M University\nNormal\nAL\n100654\n2381817.0\nSouth\n\n\n1\n12118.0\n8832.0\n21864.0\n0.639091\n0.4832\n0.2657\n0.0776\n0.0915\n0.0020\n0.0007\n0.0515\n0.6345\nUniversity of Alabama at Birmingham\nBirmingham\nAL\n100663\n2381817.0\nSouth\n\n\n2\n226.0\nNaN\nNaN\n0.648649\n0.2788\n0.6681\n0.0310\n0.0000\n0.0044\n0.0044\n0.0000\nNaN\nAmridge University\nMontgomery\nAL\n100690\n2381817.0\nSouth\n\n\n3\n6650.0\n11770.0\n24662.0\n0.476350\n0.6940\n0.0907\n0.0719\n0.0423\n0.0074\n0.0015\n0.0508\n0.6240\nUniversity of Alabama in Huntsville\nHuntsville\nAL\n100706\n2381817.0\nSouth\n\n\n4\n3322.0\n11248.0\n19576.0\n0.613419\n0.0223\n0.9082\n0.0111\n0.0018\n0.0015\n0.0012\n0.0126\n0.2884\nAlabama State University\nMontgomery\nAL\n100724\n2381817.0\nSouth\n\n\n\n\n\n\n\nThe table above shows the first few row of the data, this gives us an idea of what variable we are working with. For the purpose of this analysis we will be looking at what variables affect graduation rates.\n\n\nCode\ndata.describe()\n\n\n\n\n\n\n\n\n\nStudent_Size\nTuition_In_State\nTuition_Out_State\nFemale_Share\nRace_White\nRace_Black\nRace_Hispanic\nRace_Asian\nRace_AIAN\nRace_NHPI\nRace_Two_Or_More\nGrad_Rate\nid\nJuly_Estimate_2024\n\n\n\n\ncount\n937.000000\n726.000000\n726.000000\n863.000000\n937.000000\n937.000000\n937.000000\n937.000000\n937.000000\n937.000000\n937.000000\n878.000000\n1000.0000\n9.880000e+02\n\n\nmean\n4894.967983\n16561.304408\n21765.334711\n0.605576\n0.398195\n0.166731\n0.256833\n0.057257\n0.009128\n0.003922\n0.043904\n0.506051\n126723.1950\n7.947942e+06\n\n\nstd\n8109.876927\n17451.585148\n15443.426078\n0.140958\n0.237496\n0.201430\n0.208431\n0.086143\n0.040523\n0.009823\n0.043415\n0.199975\n15159.9182\n5.400004e+06\n\n\nmin\n2.000000\n1104.000000\n1410.000000\n0.025592\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.000000\n0.016700\n100654.0000\n3.304630e+05\n\n\n25%\n375.000000\n3372.000000\n9882.500000\n0.543774\n0.194500\n0.040600\n0.092100\n0.009900\n0.000900\n0.000000\n0.019600\n0.347400\n112439.7500\n3.026199e+06\n\n\n50%\n1614.000000\n9343.000000\n15746.000000\n0.598770\n0.398600\n0.090700\n0.200000\n0.026200\n0.002500\n0.001300\n0.037500\n0.487700\n127171.5000\n5.482770e+06\n\n\n75%\n5697.000000\n26268.750000\n30407.250000\n0.665277\n0.590500\n0.200000\n0.368500\n0.064900\n0.005900\n0.003500\n0.055300\n0.652075\n139988.2500\n1.487790e+07\n\n\nmax\n68619.000000\n68237.000000\n68237.000000\n0.978996\n0.993600\n1.000000\n1.000000\n1.000000\n0.990700\n0.100000\n0.431900\n1.000000\n151388.0000\n1.487790e+07\n\n\n\n\n\n\n\nThe table above shows summary statistics for each variable in the dataframe.\nThe following table is the count of N/A values after taking the averages of graduation rate, in state tuition, and out of stat tuition for each state and filling the na values with those mean values. Note there are still some unknown values for the categorical values.\n\n\n\nVariable\nCount\n\n\n\n\nStudent_Size\n63\n\n\nTuition_In_State\n1\n\n\nTuition_Out_State\n1\n\n\nFemale_Share\n137\n\n\nRace_White\n63\n\n\nRace_Black\n63\n\n\nRace_Hispanic\n63\n\n\nRace_Asian\n63\n\n\nRace_AIAN\n63\n\n\nRace_NHPI\n63\n\n\nRace_Two_Or_More\n63\n\n\nGrad_Rate\n1\n\n\nSchool_Name\n0\n\n\nCity\n0\n\n\nState\n0\n\n\nid\n0\n\n\nJuly_Estimate_2024\n12\n\n\nRegion\n374\n\n\n\nThe following table is the count of occurrences for each state. Note that there is not data on all of the states in the U.S. this is due to the amount of data pulled from the API, only 1,000 schools were accounted for in the data, therefore the data will be skewed.\n\n\n\nState\nCount\n\n\n\n\nAK\n8\n\n\nAL\n55\n\n\nAR\n58\n\n\nAZ\n40\n\n\nCA\n313\n\n\nCO\n51\n\n\nCT\n35\n\n\nDC\n12\n\n\nDE\n8\n\n\nFL\n122\n\n\nGA\n78\n\n\nHI\n12\n\n\nID\n14\n\n\nIL\n156\n\n\nIN\n35\n\n\nMN\n1\n\n\nNM\n1\n\n\nNY\n1\n\n\n\nThere are many more schools to account for however this data is still useful.\nThe data for the northern and southern regions have about the same amount of observations.\n\n\n\nRegion\n\n\n\n\n\nNorth\n293\n\n\nSouth\n333\n\n\n\nNext we can compute the mean graduation rate for each state in the dataset.\n\n\n\nState\nMean Graduation Rate\n\n\n\n\nAK\n0.491314\n\n\nAL\n0.396898\n\n\nAR\n0.462617\n\n\nAZ\n0.428985\n\n\nCA\n0.525233\n\n\nCO\n0.517437\n\n\nCT\n0.625406\n\n\nDC\n0.654925\n\n\nDE\n0.493286\n\n\nFL\n0.551218\n\n\nGA\n0.435044\n\n\nHI\n0.410892\n\n\nID\n0.520750\n\n\nIL\n0.511828\n\n\nIN\n0.534775\n\n\nMN\nNaN\n\n\nNM\n0.537000\n\n\nNY\n0.125000\n\n\n\nIt is interesting to note that the District of Columbia, which is a territory has the highest graduation rate, with Connecticut following as a close second. Again we really can’t pull reliable inferences from this since the sample sizes are skewed, especially since New York, which has some of the most prestigious universities in the country, has the lowest graduation rate and only one singular occurrence in the dataset.\nWe can run a regression model on the following variables and see if any are statistically significant.\n\n\n\nTerm\nCoefficient\n\n\n\n\nIntercept\n0.28883021499055983\n\n\nStudent_Size\n2.19323220e-06\n\n\nTuition_In_State\n-2.38317495e-06\n\n\nTuition_Out_State\n1.14899535e-05\n\n\nRegion_numeric\n-3.72713468e-02\n\n\n\n\n\n\nMetric\nValue\n\n\n\n\nMean Squared Error\n0.020479592983903977\n\n\nR-squared\n0.2711396143816296\n\n\n\nWe cannot pull inference from this model, however it is interesting to see if there is an interaction between certain variables.\n\n\nPlots\n\n\nCode\nsns.scatterplot(data=data, x=\"Tuition_In_State\", y=\"Grad_Rate\", hue=\"Region\")\nplt.xlabel('Tuition In State')\nplt.ylabel('Graduation Rate')\nplt.title('In State Tuition Vs. Grad Rate')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\nThe plot above shows in state tuition prices plotted against graduation rates, with the colors corresponding to north and south regions of the U.S. It is interesting to note that there appears to be a linear relationship between higher tuition prices and graduation rate.\n\n\nCode\nsns.scatterplot(data=data, x=\"Tuition_Out_State\", y=\"Grad_Rate\", hue=\"Region\")\nplt.xlabel('Tuition Out State')\nplt.ylabel('Graduation Rate')\nplt.title('Out of State Tuition Vs. Grad Rate')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\nWe can plot the the relationship between out of state tuition and graduation rates as well. From the plot we again see that there appears to be a linear relationship between the variables.\nThe following boxplots can help gather more inference on graduation rates for the different states.\n\n\nCode\n# Box plots for mean graduation rate\n\nsns.set_theme(style = \"ticks\")\n\nf, ax = plt.subplots(figsize =(7,6))\nax.set_xscale(\"log\")\n\nsns.boxplot(\n    data, x=\"Grad_Rate\", y=\"State\", hue = \"State\",\n    whis=[0,10], width = .6\n)\n\nax.xaxis.grid(True)\nax.set(ylabel=\"\")\nsns.despine(trim=True, left=True)\n\n\n\n\n\n\n\n\n\nWe can do the same for tuition prices, this plot uses out of state tuition data.\n\n\nCode\n# Box plots for mean out of state tuition\n\nsns.set_theme(style = \"ticks\")\n\nf, ax = plt.subplots(figsize =(7,6))\nax.set_xscale(\"log\")\n\nsns.boxplot(\n    data, x=\"Tuition_Out_State\", y=\"State\", hue = \"State\",\n    whis=[0,10], width = .6\n)\n\nax.xaxis.grid(True)\nax.set(ylabel=\"\")\nsns.despine(trim=True, left=True)\n\n\n\n\n\n\n\n\n\nThese highlights of the data help us understand that while more information and data is needed to pull reliable inferences, we can see that higher tuition prices could result in higher graduation rate in U.S. colleges.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#resources",
+    "href": "projects/data-acquisition.html#resources",
+    "title": "Data Acquisition Project",
+    "section": "Resources",
+    "text": "Resources\n\nU.S. Census Bureau\nCollege Scorecard\nMore information about graduation rates.",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#code-links",
+    "href": "projects/data-acquisition.html#code-links",
+    "title": "Data Acquisition Project",
+    "section": "Code Links",
+    "text": "Code Links\nFork the repository below to view the code used to create and merge the datasets, as well as the EDA process.\n\nCode for data analysis",
+    "crumbs": [
+      "Data Acquisition Project"
+    ]
+  },
+  {
+    "objectID": "projects/data-acquisition.html#disclaimers",
+    "href": "projects/data-acquisition.html#disclaimers",
+    "title": "Data Acquisition Project",
+    "section": "Disclaimers",
+    "text": "Disclaimers\nThis product uses the Census Bureau Data API but is not endorsed or certified by the Census Bureau.",
+    "crumbs": [
+      "Data Acquisition Project"
     ]
   }
 ]
